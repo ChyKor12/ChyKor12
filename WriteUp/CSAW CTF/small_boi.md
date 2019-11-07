@@ -35,7 +35,7 @@ Disassembly of section .text:
   40018b:	c3                   	retq   
   40018c:	55                   	push   %rbp
   40018d:	48 89 e5             	mov    %rsp,%rbp
-  400190:	48 8d 45 e0          	lea    -0x20(%rbp),%rax
+  400190:	48 8d 45 e0          	lea    -0x20(%rbp),%rax 
   400194:	48 89 c6             	mov    %rax,%rsi
   400197:	48 31 c0             	xor    %rax,%rax
   40019a:	48 31 ff             	xor    %rdi,%rdi
