@@ -117,8 +117,6 @@ drwxr-xr-x   2 root root     4096 Oct 23  2016 .pwntools-cache
 -rw-r--r--   1 root root     1431 Sep 26  2015 uaf.cpp
 ```
 
-`flag`의 내용은 `root`와 `group`만 읽을 수 있다. 지금은 일반 사용자로 접속하고 있기 때문에 `cat flag`를 해 보면 Permission denied가 뜬다. `group` 이상의 권한을 얻어야 하는데, `uaf`에 setgid가 걸려 있어서, 프로그램을 실행하면 일시적으로 `group`의 권한을 얻게 된다. 그러면 프로그램이 실행 중일 때는 `flag`의 내용을 읽을 수 있는 권한이 주어진다. 이를 이용해야 하는 문제일 것 같다.
-
 ---
 
 `uaf.cpp` 코드를 보면, `main()`에서 먼저 `m`과 `w` 객체를 생성하고 초기화한다. 그리고 옵션을 입력받고 그에 따른 코드를 실행하는 과정을 반복한다.
