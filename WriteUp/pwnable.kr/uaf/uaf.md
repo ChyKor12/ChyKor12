@@ -102,23 +102,6 @@ uaf.cpp                                                                         
 
 ---
 
-서버에서 `uaf`와 `flag`의 권한을 보면 다음과 같다.
-
-```bash
-uaf@prowl:~$ ls -al
-total 44
-drwxr-x---   5 root uaf      4096 Oct 23  2016 .
-drwxr-xr-x 116 root root     4096 Nov 12 21:34 ..
-d---------   2 root root     4096 Sep 21  2015 .bash_history
--rw-r-----   1 root uaf_pwn    22 Sep 26  2015 flag
-dr-xr-xr-x   2 root root     4096 Sep 21  2015 .irssi
-drwxr-xr-x   2 root root     4096 Oct 23  2016 .pwntools-cache
--r-xr-sr-x   1 root uaf_pwn 15463 Sep 26  2015 uaf
--rw-r--r--   1 root root     1431 Sep 26  2015 uaf.cpp
-```
-
----
-
 `uaf.cpp` 코드를 보면, `main()`에서 먼저 `m`과 `w` 객체를 생성하고 초기화한다. 그리고 옵션을 입력받고 그에 따른 코드를 실행하는 과정을 반복한다.
 
 - `op == 1` :  `m`과 `w`에 대해 각각 `introduce()`를 호출한다.
